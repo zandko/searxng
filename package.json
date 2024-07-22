@@ -60,5 +60,10 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "homepage": "https://github.com/zandko/searxng.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zandko/searxng.git"
   }
 }
