@@ -1,0 +1,64 @@
+{
+  "name": "searxng-service",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.5.0",
+  "description": "A TypeScript service to interact with the SearXNG search engine API, enabling customizable searches and result retrieval.",
+  "author": {
+    "name": "Zane",
+    "email": "zandko@126.com",
+    "url": "https://github.com/zandko"
+  },
+  "license": "MIT",
+  "keywords": [
+    "searxng",
+    "search",
+    "api",
+    "service",
+    "search-engine",
+    "open-source",
+    "web-scraping",
+    "search-results"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bumpp": "^9.4.1",
+    "esno": "^4.7.0",
+    "pnpm": "^9.5.0",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
