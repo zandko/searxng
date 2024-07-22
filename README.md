@@ -22,7 +22,7 @@ A TypeScript service to interact with the SearXNG search engine API. This servic
 ## Installation
 
 ```bash
-npm install searxng-service
+npm install searxng
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ npm install searxng-service
 First, import and instantiate the `SearxngService` with your configuration:
 
 ```typescript
-import { SearxngService, type SearxngServiceConfig } from 'searxng-service';
+import { SearxngService, type SearxngServiceConfig } from 'searxng';
 
 const config: SearxngServiceConfig = {
   baseURL: 'https://your-searxng-instance.com',
@@ -203,7 +203,7 @@ Returns a promise that resolves to `SearxngSearchResults`.
 ### Basic Search
 
 ```typescript
-import { SearxngService, type SearxngServiceConfig } from 'searxng-service';
+import { SearxngService, type SearxngServiceConfig } from 'searxng';
 
 const config: SearxngServiceConfig = {
   baseURL: 'https://your-searxng-instance.com',
@@ -233,7 +233,7 @@ performSearch();
 ### Search with Parameters
 
 ```typescript
-import { SearxngService, type SearxngServiceConfig } from 'searxng-service';
+import { SearxngService, type SearxngServiceConfig } from 'searxng';
 
 const config: SearxngServiceConfig = {
   baseURL: 'https://your-searxng-instance.com'
