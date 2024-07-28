@@ -31,7 +31,7 @@ class SearxngService {
     });
     __publicField(this, "defaultRequestHeaders");
     this.baseURL = baseURL;
-    this.defaultSearchParams = { ...defaultSearchParams, format: "json" };
+    this.defaultSearchParams = { format: "json", ...defaultSearchParams };
     this.defaultRequestHeaders = {
       "Content-Type": "application/json",
       ...defaultRequestHeaders
