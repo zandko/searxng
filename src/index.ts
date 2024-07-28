@@ -1,6 +1,8 @@
 import type { SearxngSearchParameters, SearxngSearchResults } from './types';
 import axios, { AxiosError } from 'axios';
 
+export * from './types';
+
 /**
  * Configuration interface for SearxngService.
  *
@@ -40,7 +42,7 @@ export class SearxngService {
     defaultRequestHeaders,
   }: SearxngServiceConfig) {
     this.baseURL = baseURL;
-    this.defaultSearchParams = { ...defaultSearchParams, format: 'json' };
+    this.defaultSearchParams = { format: 'json', ...defaultSearchParams };
     this.defaultRequestHeaders = {
       'Content-Type': 'application/json',
       ...defaultRequestHeaders,

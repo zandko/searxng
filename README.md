@@ -82,7 +82,7 @@ export type SearxngCategory =
 export type SearxngEngine =
   | '1337x'
   | '9gag'
-  // Add all other engines here
+  // Other engines here
   | 'zlibrary';
 ```
 
@@ -93,7 +93,7 @@ export type SearxngLocale =
   | 'af'
   | 'ar'
   | 'bg'
-  // Add all other locales here
+  // Other locales here
   | 'zh-Hant-TW';
 ```
 
@@ -103,7 +103,7 @@ export type SearxngLocale =
 export type SearxngPlugin =
   | 'Hash_plugin'
   | 'Self_Information'
-  // Add all other plugins here
+  // Other plugins here
   | 'Tor_check_plugin';
 ```
 
