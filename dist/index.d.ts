@@ -113,18 +113,26 @@ interface SearxngSearchParameters {
 interface SearxngSearchResult {
     url: string;
     title: string;
-    content: string;
-    img_src: string;
-    engine: string;
+    content?: string;
+    engine: SearxngEngine;
     parsed_url: string[];
-    template: string;
-    engines: string[];
+    template: 'default.html' | 'videos.html' | 'images.html';
+    engines: SearxngEngine[];
     positions: number[];
+    publishedDate?: Date | null;
+    thumbnail?: null | string;
+    is_onion?: boolean;
     score: number;
-    category: string;
-    pretty_url: string;
-    open_group?: boolean;
-    close_group?: boolean;
+    category: SearxngCategory;
+    length?: null | string;
+    duration?: null | string;
+    iframe_src?: string;
+    source?: string;
+    metadata?: string;
+    resolution?: null | string;
+    img_src?: string;
+    thumbnail_src?: string;
+    img_format?: 'jpeg' | 'Culture Snaxx' | 'png';
 }
 /**
  * Represents the full set of search results returned by the SearXNG API.
