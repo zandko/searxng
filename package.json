@@ -1,7 +1,7 @@
 {
   "name": "searxng",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "packageManager": "pnpm@9.5.0",
   "description": "A TypeScript service to interact with the SearXNG search engine API, enabling customizable searches and result retrieval.",
   "author": {
